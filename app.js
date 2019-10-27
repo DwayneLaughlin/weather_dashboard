@@ -32,8 +32,9 @@ $(document).ready(function(){
             $("#windSpeed").html("Wind Speed: " + cityWind + "mph");
 
             for(i=0; i<5; i++){
-                var tempList = response.list[i].main.temp
-                $("#fiveDay").append(tempList + "<br>")
+                var highList = response.list[i].main.temp_max;
+                var lowList = response.list[i].main.temp_min;
+                $("#highTemp").append("<div>High:"+highList+" Low:"+lowList+"</div>");
             }
 
 
