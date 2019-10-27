@@ -11,13 +11,14 @@
 
 <body>
     <h1 class="text-center bg-secondary">Weather</h1>
-    <div class="container">
+    <div id="currentConditions" class="container">
         <div class="row">
             <div class="col-md-6">
-            Search For a City <input id="searchBar">
+            Search For a City <input name="searches" id="searchBar" type="text">
             <button id="searchButton">Search</button>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 text-center">
+                <h1>Current Conditions</h1>
                 <div id="nameDate"></div>
             
                 <div id="currentTemp"></div>
@@ -29,6 +30,14 @@
                 <div id="uvIndex"></div>
             </div>
         </div>
+
+        <div class="comtainer">
+            <div id="fiveDay" class="row">
+                
+            </div>
+        </div>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
 </body>
