@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <h1 class="text-center bg-secondary">Weather</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+            Search For a City <input id="searchBar">
+            <button id="searchButton">Search</button>
+            </div>
+            <div class="col-md-6">
+                <div id="nameDate"></div>
+            
+                <div id="currentTemp"></div>
+            
+                <div id="humidity"></div>
+            
+                <div id="windSpeed"></div>
+            
+                <div id="uvIndex"></div>
+            </div>
+        </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
