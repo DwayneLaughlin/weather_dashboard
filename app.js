@@ -1,7 +1,7 @@
 $(document).ready(function(){
   
 
-var searchData = $("#searchButton").click(function(){
+var searchData = $("#searchButton").click(function data(){
     var citySearch = $("#searchBar").val().trim();
     $("#highTemp").empty() 
      
@@ -41,16 +41,17 @@ var searchData = $("#searchButton").click(function(){
             url:indexURL,
             method:"GET"
         }).then(function (response1){
-            
-            
-            
             var index = response1.value
             $("#uvIndex").html("UV Index: " + index); 
             })
-        
 
+        var cityList = [];
+        cityList.push(cityName)
+        $("#previous").append(cityList + "<br>")
         });
-      
+
+
+        
     });
 
    
