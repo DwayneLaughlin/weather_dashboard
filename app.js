@@ -36,7 +36,6 @@ $(document).ready(function () {
         var dateDay = "/"+(today.getDate() + i) ;
         var dateYear = "/"+today.getFullYear();
 
-          var num = 2
 
         $("#highTemp").append(
           "<div>" + (dateMonth + dateDay + dateYear ) + " High:" + highList + " Low:" + lowList + "</div>"
