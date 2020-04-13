@@ -29,6 +29,7 @@ $(document).ready(function () {
       var iconURL = "http://openweathermap.org/img/wn/" + cityIcon + "@2x.png";
       $("#nameDate").html("<img src=" + iconURL + ">");
 
+    //   for loop for displaying 5 day forecast
       for (i = 0; i < 5; i++) {
         var highList = response.list[i].main.temp_max;
         var lowList = response.list[i].main.temp_min;
