@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  
   var searchData = $("#searchButton").click(function data() {
     var citySearch = $("#searchBar").val().trim();
     $("#highTemp").empty();
@@ -68,4 +69,11 @@ $(document).ready(function () {
       $("#previous").append(cityList + "<br>");
     });
   });
+// CODE TO MAKE ENTER KEY WORK ON SEARCH BAR
+//   $("#searchBar").keypress(function(e){
+//     if(e.which == 13) {
+//         e.preventDefault()
+//         $("searchButton").click()
+//     }
+// });
 });
