@@ -1,78 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
     <title>Weather Dashboard</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1 class="text-center bg-primary">Weather Dashboard</h1>
     <div id="currentConditions" class="container">
-        <div class="row align-center">
-            <div class="col-md-4">
-                <h1>Search for a City!</h1>
-                <input id="searchBar" type="text">
-                <button id="searchButton">Search</button>
-            </div>
-            <div class="col-md-4 text-center">
-                <h1>Current Conditions</h1>
-                <div id="nameDate"></div>
-            
-                <div id="currentTemp"></div>
-            
-                <div id="humidity"></div>
-            
-                <div id="windSpeed"></div>
-            
-                <div id="uvIndex"></div>
-            </div>
-            
-            <div class=" col-md-4text-center">
-                <h1>Five Day Forecast</h1>
-                <div id="fiveTemp" class="col-md-12 text-center">
-                    <div id="highTemp"></div>
-                </div> 
-            </div>
-            
-        
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+      <div class="row align-center">
+        <div class="col-md-4">
+          <h1>Search for a City!</h1>
+          <input id="searchBar" type="text" />
+          <button id="searchButton">Search</button>
+        </div>
+        <div class="col-md-4 text-center">
+          <h1>Current Conditions</h1>
+          <div id="nameDate"></div>
+
+          <div id="currentTemp"></div>
+
+          <div id="humidity"></div>
+
+          <div id="windSpeed"></div>
+
+          <div id="uvIndex"></div>
         </div>
 
-        <br>
-        <br>
+        <div class="col-md-4text-center">
+          <h1>Five Day Forecast</h1>
+          <div id="fiveTemp" class="col-md-12 text-center">
+            <div id="highTemp"></div>
+          </div>
+        </div>
 
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
 
+      <br />
+      <br />
     </div>
-        <br>
-        <br>
+    <br />
+    <br />
 
-
-    <h1 class ="text-center bg-primary">Previous Searches</h1>
+    <h1 class="text-center bg-primary">Previous Searches</h1>
     <div class="container">
-        <div class="row col-md-12 text-center">
-            
-            <div id="previous" class="col-md-12 text-center">
-
-            </div>  
-        </div>
+      <div class="row col-md-12 text-center">
+        <div id="previous" class="col-md-12 text-center"></div>
+      </div>
     </div>
-
-        
-        
-            
-        
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
-</body>
+  </body>
 </html>
