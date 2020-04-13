@@ -7,6 +7,7 @@ $(document).ready(function () {
       "https://api.openweathermap.org/data/2.5/forecast?q=" +
       citySearch +
       "&APPID=3962360e63ed61d5bc7374f81a485e9b&units=imperial";
+// ajax call for display of city name, current temp, humidity, windspeed and icon
 
     $.ajax({
       url: queryURL,
