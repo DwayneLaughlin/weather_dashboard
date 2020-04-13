@@ -32,7 +32,10 @@ var searchData = $("#searchButton").click(function data(){
         for(i=0; i<5; i++){
             var highList = response.list[i].main.temp_max;
             var lowList = response.list[i].main.temp_min;
-            $("#highTemp").append("<div>High:"+highList+" Low:"+lowList+"</div>");
+            var today = new Date();
+            var date = (today.getMonth()+1) + "/" + today.getDate() + "/" + today.getFullYear();
+
+            $("#highTemp").append("<div>"+date+" High:"+highList+" Low:"+lowList+"</div>");
         }
         var indexURL = "http://api.openweathermap.org/data/2.5/uvi?appid=3962360e63ed61d5bc7374f81a485e9b&lat="+response.city.coord.lat+"&lon="+response.city.coord.lon+"";
          
