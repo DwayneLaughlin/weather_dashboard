@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  
   var searchData = $("#searchButton").click(function data() {
     var citySearch = $("#searchBar").val().trim();
     $("#highTemp").empty();
@@ -8,7 +7,7 @@ $(document).ready(function () {
       "https://api.openweathermap.org/data/2.5/forecast?q=" +
       citySearch +
       "&APPID=3962360e63ed61d5bc7374f81a485e9b&units=imperial";
-// ajax call for display of city name, current temp, humidity, windspeed and icon
+    // ajax call for display of city name, current temp, humidity, windspeed and icon
 
     $.ajax({
       url: queryURL,
@@ -30,7 +29,7 @@ $(document).ready(function () {
       var iconURL = "http://openweathermap.org/img/wn/" + cityIcon + "@2x.png";
       $("#nameDate").html("<img src=" + iconURL + ">");
 
-    //   for loop for displaying 5 day forecast
+      //   for loop for displaying 5 day forecast
       for (i = 0; i < 5; i++) {
         var highList = response.list[i].main.temp_max;
         var lowList = response.list[i].main.temp_min;
@@ -69,11 +68,11 @@ $(document).ready(function () {
       $("#previous").append(cityList + "<br>");
     });
   });
-// CODE TO MAKE ENTER KEY WORK ON SEARCH BAR
-//   $("#searchBar").keypress(function(e){
-//     if(e.which == 13) {
-//         e.preventDefault()
-//         $("searchButton").click()
-//     }
-// });
+  // CODE TO MAKE ENTER KEY WORK ON SEARCH BAR
+  //   $("#searchBar").keypress(function(e){
+  //     if(e.which == 13) {
+  //         e.preventDefault()
+  //         $("searchButton").click()
+  //     }
+  // });
 });
