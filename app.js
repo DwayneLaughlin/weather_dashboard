@@ -33,12 +33,17 @@ $(document).ready(function () {
         var lowList = response.list[i].main.temp_min;
         var today = new Date();
         var dateMonth = today.getMonth() + 1;
-        var dateDay = "/"+(today.getDate() + i) ;
-        var dateYear = "/"+today.getFullYear();
-
+        var dateDay = "/" + (today.getDate() + i);
+        var dateYear = "/" + today.getFullYear();
 
         $("#highTemp").append(
-          "<div>" + (dateMonth + dateDay + dateYear ) + " High:" + highList + " Low:" + lowList + "</div>"
+          "<div>" +
+            (dateMonth + dateDay + dateYear) +
+            " High:" +
+            highList +
+            " Low:" +
+            lowList +
+            "</div>"
         );
       }
       var indexURL =
