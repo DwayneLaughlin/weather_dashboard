@@ -3,4 +3,6 @@ This is a weather dashboard. Users can type in a city name in the search bar and
 
 Weather information is taken from the Open Weather Map API. 
 
+![](/assets/weather.png)
+
 Deployed application: https://dwaynelaughlin.github.io/weather_dashboard/
